@@ -296,6 +296,7 @@ $("#close").click(closeSideBar);
 function InnerLoading() {
 
     $("#loading-inner").removeClass('d-none');
+    $("#loading-inner").css('display', 'block');
     $('body').css('overflow', 'hidden');
     $('document').ready(function () {
         $(".spinner").fadeOut(1000, () => {
